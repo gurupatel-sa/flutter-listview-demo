@@ -46,8 +46,7 @@ class DynamicList extends State<ListDisplay> {
         title: new Center(child: new Text("Notes", textAlign: TextAlign.center)),
       ),
       // ListView.builder() shall be used here.
-      body: new Container(
-      
+      body: Container(
         margin: EdgeInsets.fromLTRB(10, 20, 10, 0),
         child: new Column(
           children: <Widget>[
@@ -69,7 +68,6 @@ class DynamicList extends State<ListDisplay> {
                   ),
                   new Container(
                     margin: EdgeInsets.fromLTRB(10, 5, 10, 10),
-                    padding: EdgeInsets.all(10),
                     child: TextFormField(
                       controller: titleController,
                       decoration: const InputDecoration(
@@ -85,7 +83,7 @@ class DynamicList extends State<ListDisplay> {
                     ),
                   ),
                   new Container(
-                    margin: EdgeInsets.all(12),
+                    margin: EdgeInsets.all(4),
                     child: TextFormField(
                       controller: descController,
                       decoration: const InputDecoration(
@@ -149,6 +147,7 @@ class DynamicList extends State<ListDisplay> {
           ],
         ),
       ),
+       
     );
   }
 }
