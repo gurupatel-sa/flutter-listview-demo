@@ -72,6 +72,7 @@ class DynamicList extends State<ListDisplay> {
                       controller: titleController,
                       decoration: const InputDecoration(
                         labelText: 'Title',
+                        labelStyle: TextStyle(color: Colors.grey)
                       ),
                       onSaved: (String value) {
                         // This optional block of code can be used to run
@@ -88,6 +89,7 @@ class DynamicList extends State<ListDisplay> {
                       controller: descController,
                       decoration: const InputDecoration(
                         labelText: 'Description',
+                        labelStyle: TextStyle(color: Colors.grey)
                       ),
                       onSaved: (String value) {
                         // This optional block of code can be used to run
